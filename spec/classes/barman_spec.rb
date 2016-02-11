@@ -29,27 +29,18 @@ describe 'barman' do
       {
         "operatingsystem" => "Debian",
         "operatingsystemrelease" => ["6.0"],
-        "lsbdistid" => "Debian",
-        "lsbdistcodename" => 'squeeze',
+    #    "lsbdistid" => "Debian",
+    #    "lsbdistcodename" => 'squeeze',
       },
       {
         "operatingsystem" => "RedHat",
         "operatingsystemrelease" => [
-          "6",
-          "7"
+          "6.7",
+          "7.1"
         ],
-        "lsbdistid" => "RedHat",
-        "lsbdistcodename" => "RedHat",
+    #    "lsbdistid" => "RedHat",
+    #    "lsbdistcodename" => "RedHat",
       },
-      {
-        "operatingsystem" => "CentOS",
-        "operatingsystemrelease" => [
-          "6",
-          "7"
-        ],
-        "lsbdistid" => "CentOS",
-        "lsbdistcodename" => "CentOS",
-      }
     ],
   }).each do |os, facts|
   context "on #{os}" do
