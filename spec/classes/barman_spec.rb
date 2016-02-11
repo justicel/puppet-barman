@@ -2,13 +2,21 @@ require 'spec_helper'
 
 describe 'barman' do
 
-  let(:facts) do
+  let(:facts) do    
+#{
+#      :osfamily => 'Debian',
+#      :operatingsystem => 'Debian',
+#      :operatingsystemrelease => '6.0',
+#      :lsbdistid => 'Debian',
+#      :lsbdistcodename => 'squeeze',
+#      :ipaddress => '10.0.0.1',
+#    }
     {
-      :osfamily => 'Debian',
-      :operatingsystem => 'Debian',
-      :operatingsystemrelease => '6.0',
-      :lsbdistid => 'Debian',
-      :lsbdistcodename => 'squeeze',
+      :osfamily => 'RedHat',
+      :operatingsystem => 'CentOS',
+      :operatingsystemrelease => '6.7',
+      :lsbdistid => 'CentOS',
+      :lsbdistcodename => 'CentOS',
       :ipaddress => '10.0.0.1',
     }
   end
