@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'barman' do
 
   let(:facts) do    
-#{
+{
 #      :osfamily => 'Debian',
 #      :operatingsystem => 'Debian',
 #      :operatingsystemrelease => '6.0',
@@ -11,12 +11,12 @@ describe 'barman' do
 #      :lsbdistcodename => 'squeeze',
 #      :ipaddress => '10.0.0.1',
 #    }
-    {
-      :osfamily => 'RedHat',
-      :operatingsystem => 'CentOS',
-      :operatingsystemrelease => '6.7',
-      :lsbdistid => 'CentOS',
-      :lsbdistcodename => 'CentOS',
+#    {
+#      :osfamily => 'RedHat',
+#      :operatingsystem => 'CentOS',
+#      :operatingsystemrelease => '6.7',
+#      :lsbdistid => 'CentOS',
+#      :lsbdistcodename => 'CentOS',
       :ipaddress => '10.0.0.1',
     }
   end
@@ -49,7 +49,7 @@ describe 'barman' do
       }
     ],
   }).each do |os, facts|
-
+  context "on #{os}" do
   # Installs barman
   it { is_expected.to contain_package('barman').with_tag('postgresql') }
 
@@ -134,7 +134,7 @@ describe 'barman' do
 
       it { is_expected.to compile }
     end
-
+  end
   end
   end
 end
