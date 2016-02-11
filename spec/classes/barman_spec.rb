@@ -28,15 +28,15 @@ describe 'barman' do
     :supported_os   => [
       {
         "operatingsystem" => "Debian",
-        "operatingsystemrelease" => ["6.0"],
+        "operatingsystemrelease" => ["6"],
         "lsbdistid" => "Debian",
         "lsbdistcodename" => 'squeeze',
       },
       {
         "operatingsystem" => "RedHat",
         "operatingsystemrelease" => [
-          "6.7",
-          "7.1"
+          "6",
+          "7"
         ],
         "lsbdistid" => "RedHat",
         "lsbdistcodename" => "RedHat",
