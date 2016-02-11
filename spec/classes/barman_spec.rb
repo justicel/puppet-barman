@@ -28,7 +28,7 @@ describe 'barman' do
     :supported_os   => [
       {
         "operatingsystem" => "Debian",
-        "operatingsystemrelease" => "6.0",
+        "operatingsystemrelease" => ["6.0"],
         "lsbdistid" => "Debian",
         "lsbdistcodename" => 'squeeze',
       },
