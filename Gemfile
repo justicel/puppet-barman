@@ -11,6 +11,7 @@ group :development, :unit_tests do
   gem 'json',                    :require => false
   gem 'metadata-json-lint',      :require => false
   gem 'iconv',                   :require => false
+  gem 'rspec-puppet-facts',      :require => false
 end
 
 group :system_tests do

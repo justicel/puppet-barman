@@ -21,6 +21,35 @@ describe 'barman' do
     }
   end
 
+
+
+  on_supported_os({
+    :hardwaremodels => ['x86_64'],
+    :supported_os   => [
+      {
+        "operatingsystem" => "Debian",
+        "operatingsystemrelease" => [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem" => "RedHat",
+        "operatingsystemrelease" => [
+          "6",
+          "7"
+        ]
+      },
+      {
+        "operatingsystem" => "CentOS",
+        "operatingsystemrelease" => [
+          "6",
+          "7"
+        ]
+      }
+    ],
+  }).each do |os, facts|
+
   # Installs barman
   it { is_expected.to contain_package('barman').with_tag('postgresql') }
 
@@ -107,5 +136,5 @@ describe 'barman' do
     end
 
   end
-
+  end
 end
