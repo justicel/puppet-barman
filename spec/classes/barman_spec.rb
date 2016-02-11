@@ -29,8 +29,8 @@ describe 'barman' do
       {
         "operatingsystem" => "Debian",
         "operatingsystemrelease" => ["6.0"],
-    #    "lsbdistid" => "Debian",
-    #    "lsbdistcodename" => 'squeeze',
+        "lsbdistid" => "Debian",
+        "lsbdistcodename" => 'squeeze',
       },
       {
         "operatingsystem" => "RedHat",
@@ -38,8 +38,8 @@ describe 'barman' do
           "6.7",
           "7.1"
         ],
-    #    "lsbdistid" => "RedHat",
-    #    "lsbdistcodename" => "RedHat",
+        "lsbdistid" => "RedHat",
+        "lsbdistcodename" => "RedHat",
       },
     ],
   }).each do |os, facts|
